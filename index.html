@@ -21,7 +21,7 @@
 
             var connectionStatus = document.getElementById("connectionStatus");
 
-            var socket = new WebSocket("ws://" + hostname + ":" + port);
+            var socket = new WebSocket("wss://" + hostname + ":" + port);
 
             socket.onopen = function(event) {
                 connectionStatus.innerHTML = "Connection successful!";
